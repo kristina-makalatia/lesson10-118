@@ -1,0 +1,33 @@
+/* variables css - ცვლადები */
+:root {
+    --titleColor: blue;
+    --mainColor: red;
+    --fontTitle: 25px;
+}
+
+/* pseudo elements */
+/* .flex-block {
+    display: flex;
+    align-items: flex-end;
+} */
+.test::before {
+    content: 'Lesson 10';
+    color:  var(--titleColor);
+    background-color: aqua;
+    font-size: var(--fontTitle);
+    margin-right: var(--fontTitle);
+}
+/* .test::after {
+    content: '\2614';
+} */
+/* .test::after {
+    content: url(../images/smiley.gif);
+} */
+
+.test::after {
+    content: ' ';
+    width: 20px;
+    height: 2px;
+    background-color: var(--mainColor);
+    display: inline-block;
+}
