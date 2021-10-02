@@ -31,3 +31,35 @@
     background-color: var(--mainColor);
     display: inline-block;
 }
+.image {
+    width: 100%;
+}
+.flex-wraper {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+}
+
+
+@media (max-width: 768px) {
+    .flex-wraper {
+        flex-direction: column;
+    }
+    .box:nth-child(1) {
+        order: 3;
+    }
+    .box:nth-child(2) {
+        order: 1;
+    }
+    .box:nth-child(3) {
+        order: 4;
+    }
+    .box:nth-child(4) {
+        order: 2;
+    }
+}
